@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: url("images/background.jpg");
+  background-size: cover;  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main h1 {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 4px;
+  font-weight: 100;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.btn {
+  padding: 10px 20px;
+  width: 200px;
+  cursor: pointer;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 30px;
+  transition: filter 200ms ease-in-out;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.active {
+  filter: blur(5px) brightness(0.7);
+}
+
+.popup-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  background: url("images/Kyiv.jpg");
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  visibility: hidden;
+  transition: visibility 300ms ease-in-out;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 10px 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100;
+  color: white;
+  text-shadow: 2px 0 4px rgba(0,0,0,0.8);
+  letter-spacing: 2px;
+}
+
+label {
+  font-weight: 100;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 2px 0 4px rgba(0,0,0,0.8);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.popup-btn {
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input {
+  border: 2px solid;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: lightgray;
+}
+
+.close-icon {
+  position: absolute;
+  right: 26px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: color 150ms;
+}
+
+.close-icon:hover {
+  color: orangered
+}
