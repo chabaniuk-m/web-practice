@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: papayawhip;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 50px;
+}
+
+img {
+  height: 36px;
+  vertical-align: center;
+}
+
+main {
+  text-align: center;
+}
+
+.btn {
+  padding: 30px 50px;
+  background-color: white;
+  border: none;
+  margin: 10px;
+  font-size: 50px;
+  min-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-image: url("media/tom.png");
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  color: pink;
+}
+
+.btn:active {
+  background-size: 105%;
+}
