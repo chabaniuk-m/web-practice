@@ -39,6 +39,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 3rem;
+  }
+}
+
 /* Header */
 
 header {
@@ -54,6 +60,12 @@ header {
 @media only screen and (max-width: 1024px) {
   header {
     height: 2.5625rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  header {
+    height: 3rem;
   }
 }
 
@@ -107,12 +119,15 @@ header .mobile {
   }
 
   header .mobile {
-    display: block;
+    display: flex;
+    align-items: center;
+    padding: 0 auto;
+    justify-content: space-between;
     width: 100%;
   }
 
   header .content {
-    padding: .5rem 0;
+    padding: 0;
   }
 
   header .mobile ul {
@@ -120,6 +135,7 @@ header .mobile {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    margin: 0;
   }
 
   header .mobile li {
@@ -309,6 +325,14 @@ header .mobile {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+
+  .feature h2{
+    text-align: center;
+  }
+
+  .feature h3 {
+    text-align: center;
+  }
 }
 
 /* Filters Section */
@@ -372,6 +396,7 @@ header .mobile {
   #filters-section .content h3 {
     font-size: .875rem;
     line-height: 1.4;
+    width: 70%;
   }
 
   #filters-section .images-container {
@@ -421,6 +446,10 @@ header .mobile {
   #quotes-section quote {
     font-size: 1.5rem;
     line-height: 1.4;
+  }
+
+  .quote {
+    margin-bottom: 30px;
   }
 
   #quotes-section quote-citation {
