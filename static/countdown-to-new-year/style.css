@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(117, 99, 237);
+  color: white;
+  font-family: cursive;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.time {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(98, 82, 202);
+}
+
+.timeblock {
+  padding: 10px 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeblock span {
+  font-size: 1.3rem;
+}
+
+.timeblock p {
+  margin: 0;
+  font-size: 0.8rem;
+}
