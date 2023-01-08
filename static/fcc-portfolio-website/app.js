@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('.section');
+const sections = document.querySelectorAll('.section'); 
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
@@ -37,6 +37,7 @@ function PageTransition() {
   const themeBtn = document.querySelector(".theme-btn");
   themeBtn.addEventListener("click", () => {
     let element = document.body;
+    console.log("call to toggle the theme");
     element.classList.toggle("light-mode");
   })
 }
