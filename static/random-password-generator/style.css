@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+main {
+  width: 30%;
+  background-color: rgb(247, 192, 192);
+  padding: 25px 20px;
+  padding-right: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.3);
+}
+
+main h1 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+main .input-con {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+#input {
+  width: 85%;
+  background-color: rgb(247, 192, 192);
+  border: none;
+  outline: none;
+  height: 34px;
+  display: flex;
+  align-items: bottom;
+  font-size: 1.2rem;
+}
+
+#input::placeholder {
+  font-size: 1rem;
+  color: rgb(135, 135, 135);
+}
+
+i {
+  color: rgb(135, 135, 135);
+  cursor: pointer;
+}
+
+i:hover {
+  transition: color 150ms ease-in-out;
+  color: black;
+}
+
+main button {
+  padding: 7px 14px;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main button:hover {
+  transition: background-color 150ms ease-in-out;
+  background-color: darkgreen;
+}
+
+main button:active {
+  transition: transform 10ms;
+  transform: scale(0.97);
+}
+
+.alert-con {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,.3);
+  font-family: monospace;
+  font-weight: 100;
+  font-size: 1.25rem;
+  transition: opacity 500ms ease-in-out;
+  opacity: 0;
+}
