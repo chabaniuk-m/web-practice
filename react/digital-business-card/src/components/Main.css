@@ -1,0 +1,85 @@
+main {
+  padding: 21px 35px;
+}
+
+main h1, main h3, main > p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+main h1 {
+   color: white;
+   font-size: 1.4rem;
+}
+
+main > h3 {
+  color: #F3BF99;
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+main > p {
+  color: #F5F5F5;
+  font-size: 0.55rem;
+  margin-bottom: 15px;
+}
+
+.btn-con {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+
+.btn-con .email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 9px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-con .email .text,
+.btn-con .linked-in .text {
+  margin-left: 8px;
+  line-height: 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-con .linked-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5093E2;
+  color: white;
+  padding: 9px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-con .linked-in:hover, .btn-con .email:hover {
+  transform: scale(1.05);
+  transition: transform 150ms ease-in-out;
+}
+
+.btn-con .email:active, .btn-con .linked-in:active {
+  filter: brightness(0.8);
+  transition: filter 50ms ease-in-out;
+}
+
+.info {
+  color: white;
+  margin-top: 30px;
+}
+
+.info h2 {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.info p {
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
