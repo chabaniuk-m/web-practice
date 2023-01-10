@@ -7,14 +7,18 @@ export default () => {
       <h3>Frontend Developer</h3>
       <p>laurasmith.website</p>
       <div className="btn-con">
-        <div className="email">
-          <i class="fa-solid fa-envelope"></i>
-          <span className="text">Email</span>
-        </div>
-        <div className="linked-in">
-          <i class="fa-brands fa-linkedin"></i>
-          <span className="text">LinkedIn</span>
-        </div>
+        <a className='em' href="mailto:chabanyuk.maks@gmail.com">
+          <div className="email">
+            <i class="fa-solid fa-envelope"></i>
+            <span className="text">Email</span>
+          </div>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/maksym-chabaniuk-0378b820b/">
+          <div className="linked-in">
+            <i class="fa-brands fa-linkedin"></i>
+            <span className="text">LinkedIn</span>
+          </div>
+        </a>
       </div>
       <div className="info">
         <div className="about">
