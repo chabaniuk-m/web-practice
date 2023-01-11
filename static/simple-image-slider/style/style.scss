@@ -1,0 +1,53 @@
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-flow: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  @include flex-center();
+}
+
+.image-con {
+  position: relative;
+  width: 50vw;
+  border: 4px solid red;
+  overflow: hidden;
+  height: 552px;
+  object-fit: cover;
+  box-sizing: border-box;
+  img {
+    display: inline;
+    height: 552px;
+    transition: transform 800ms ease-in-out;
+  }
+  nav {
+    position: absolute;
+    @include flex-center(column);
+    height: 140px;
+    justify-content: space-between;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    .circle {
+      width: 20px;
+      height: 20px;
+      border: 2px solid black;
+      border-radius: 50%;
+      box-shadow: 0 0 8px white;
+      transition: background-color 200ms ease-in-out;
+      cursor: pointer;
+      &:hover {
+        transition: border-color 200ms ease-in-out;
+        border-color: darkslategray;
+      }
+      &.active {
+        background-color: springgreen;
+      }
+    }
+  }
+}
+
