@@ -1,5 +1,5 @@
 /*
-=============== 
+===============  
 Variables
 ===============
 */
@@ -118,12 +118,14 @@ p {
   h2,
   h3,
   h4 {
+    margin-bottom: 0;
     line-height: 1;
   }
 }
 /*  global classes */
 
 /* section */
+
 .section {
   width: 90vw;
   margin: 0 auto;
@@ -147,7 +149,7 @@ Menu
 }
 .title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.6rem;
 }
 .underline {
   width: 5rem;
@@ -155,11 +157,13 @@ Menu
   background: var(--clr-gold);
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
 }
 .btn-container {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
+  margin-top: 1.4rem;
 }
 .filter-btn {
   background: transparent;
@@ -189,7 +193,7 @@ Menu
 .menu-item {
   display: grid;
   gap: 1rem 2rem;
-  max-width: 25rem;
+  width: 100%;
 }
 .photo {
   object-fit: cover;
@@ -220,6 +224,7 @@ Menu
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
     max-width: 40rem;
+    padding: 0;
   }
   .photo {
     height: 175px;
@@ -232,5 +237,11 @@ Menu
   }
   .photo {
     height: 150px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-item {
+    max-width: 60%;
   }
 }
