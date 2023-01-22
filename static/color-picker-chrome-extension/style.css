@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.popup {
+  width: 350px;
+}
+
+.popup .picker, header, .color {
+  display: flex;
+  align-items: center;
+}
+.popup .picker {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #e3f2fd;
+}
+
+.picker #color-picker {
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #5372f0;
+}
+
+.picked-colors {
+  margin: 10px 15px;
+}
+
+.picked-colors header {
+  justify-content: space-between;
+}
+
+.picked-colors .clear-all {
+  color: #5372f0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.all-colors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px 0;
+  list-style: none;
+  padding: 0;
+}
+
+.all-colors .color {
+  cursor: pointer;
+}
+
+.all-colors .color .rect {
+  display: block;
+  height: 22px;
+  width: 22px;
+  margin-right: 8px;
+  border-radius: 5px;
+  background-color: #5372f0;
+}
+
+.all-colors .color .value {
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
