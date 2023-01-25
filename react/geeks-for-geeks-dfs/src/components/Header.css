@@ -1,0 +1,123 @@
+@import "../theme.css";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 35px;
+  height: 50px;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  width: 360px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.language-btn {
+  font-size: 24px;
+  padding-top: 5px;
+  color: var(--font-color);
+}
+
+.search-btn {
+  font-size: 24px;
+  padding-top: 6px;
+  color: var(--font-color);
+}
+
+.search-con {
+  display: flex;
+  width: auto;
+}
+
+.search-con input {
+  width: 140px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  height: 36px;
+  margin-top: 2px;
+  color: var(--font-color);
+  background-color: var(--search-gray);
+}
+
+.search-con input:focus {
+  outline: 1px solid var(--color-gray);
+}
+
+.search-con .close {
+  font-size: 28px;
+  padding-top: 6px;
+  color: var(--font-color);
+}
+
+.sign-in-btn {
+  background-color: #273239;
+  height: 40px;
+  padding: 6px 25px;
+  color: white;
+  border-radius: 6px;
+}
+
+/* submenus */
+
+header .submenu {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  width: 250px;
+  border-top: 4px solid var(--green);
+  box-shadow: 0 0 6px 1px var(--shadow-light);
+  font-size: 0.875rem;
+  background-color: var(--background-color);
+}
+
+header .submenu button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 42px;
+  color: var(--font-color);
+  transition: background-color 150ms linear;
+}
+
+header .submenu button span {
+  text-align: left;
+}
+
+header .submenu button .arrow {
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 150ms linear;
+}
+
+header .submenu button:hover {
+  background-color: var(--color-gray);
+}
+
+header .submenu button:hover .arrow {
+  transform: rotate(-180deg);
+}
+
+header .submenu a {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 42px;
+  color: var(--font-color);
+  transition: background-color 150ms linear;
+}
+
+header .submenu a:hover {
+  background-color: var(--color-gray);
+  text-align: left;
+}

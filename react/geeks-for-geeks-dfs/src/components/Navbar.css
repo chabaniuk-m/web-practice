@@ -1,0 +1,56 @@
+@import "../theme.css";
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  gap: 0;
+  height: 70px;
+}
+
+nav .topic {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  font-weight: 600;
+  padding-right: 11px;
+  color: var(--font-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+nav .topic.active,
+nav .topic.active .arrows {
+  color: var(--green);
+}
+
+nav span {
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+nav .topic .arrows {
+  position: relative;
+  top: 3px;
+  height: 25px;
+  padding-left: 3px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+nav .topic .arrows .arrow {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  transition: transform 250ms linear;
+}
+
+nav .topic.active .arrow {
+  transform: rotate(-180deg);
+}
+
+.row span,
+.row .arrow,
+.submenu .a {
+  pointer-events: none;
+}
