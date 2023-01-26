@@ -1,0 +1,40 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --transition: all 150ms ease-in-out;
+}
+
+.light {
+  --shadow: rgb(57,57,60, 0.8);
+  --shadow-light: rgb(57,57,60, 0.3);
+  --theme-toggle-background: #ebebeb;
+  --toggle-btn-background: #39393c;
+  --background-color: #ffffff;
+  --primary-background: #fdfdfd;
+  --font-color: #273239;
+  --color-gray: #ebebeb;
+  --color-gray-light: #f9f9f9;
+  --search-gray: #e6e6e6;
+  --green: #2f8143;
+  transition: var(--transition);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-background);
+}
+
+.dark {
+  --shadow: rgba(214, 214, 224, 0.8);
+  --shadow-light: rgba(214, 214, 224, 0.3);
+  --theme-toggle-background: #131417;
+  --toggle-btn-background: #e4e4e8;
+  --background-color: #222221;
+  --primary-background: #131417;
+  --font-color: #ffffff;
+  --color-gray: #404040;
+  --color-gray-light: #1e1e1e;
+  --search-gray: #484848;
+  --green: #2f8143;
+  transition: var(--transition);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-background);
+}
