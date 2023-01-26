@@ -1,0 +1,76 @@
+@import "../theme.css";
+
+section.content {
+  display: flex;
+  flex-flow: column;
+  flex: 2.6;
+  height: 650px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  gap: 0;
+  z-index: 5;
+}
+
+section > .link,
+section > .con > button {
+  height: 50px;
+  font-size: 0.8rem;
+  padding: 13px 15px;
+  box-sizing: border-box;
+  color: var(--font-color);
+}
+
+section .link {
+  display: flex;
+  align-items: center;
+}
+
+section .link:hover {
+  transition: var(--transition);
+  font-weight: 600;
+}
+
+section .con {
+  border-bottom: 1px solid var(--color-gray);
+}
+
+section > .con > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section .con button.expanded {
+  background-color: var(--search-gray);
+}
+
+section .con button .arrow {
+  font-size: 20px;
+  transition: transform 300ms linear;
+  pointer-events: none;
+}
+
+section .con button.expanded .arrow {
+  transform: rotate(180deg);
+}
+
+section .con div {
+  flex-flow: column;
+  overflow: hidden;
+  height: 0;
+  background-color: var(--search-gray);
+}
+
+section .con .sublink {
+  padding-left: 40px;
+  text-align: left;
+  height: 62px;
+  box-sizing: border-box;
+  color: var(--font-color)
+}
+
+section .con .sublink:hover {
+  transition: var(--transition);
+  font-weight: 600;
+}
